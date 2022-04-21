@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Sortir.com!{% endblock %}
+
+{% block home %}
+<div class="bg-primary home-hero">
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-12">
+                <div class="text-center m-0 d-flex flex-column justify-content-center align-items-center text-light hero-content">
+                    <h1 class="display-4">Les sorties à&nbsp;l'ENI</h1>
+                    <p class="lead">{{ allEventCount }} sortie organisées !</p>
+                    <div>
+                        <a class="btn btn-lg btn-success mt-3" href="{{ path('event_list') }}" title="Voir toute les sorties">Voir toutes les sorties !</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block body %}
+    <h2>On va sortir</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur corporis earum quam repellat unde. Ad consequatur dolore est ex, labore maxime molestiae nam nesciunt omnis provident quae quisquam repudiandae sed?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur corporis earum quam repellat unde. Ad consequatur dolore est ex, labore maxime molestiae nam nesciunt omnis provident quae quisquam repudiandae sed?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur corporis earum quam repellat unde. Ad consequatur dolore est ex, labore maxime molestiae nam nesciunt omnis provident quae quisquam repudiandae sed?</p>
+{% endblock %}
